@@ -5,7 +5,7 @@ import useForm from 'react-hook-form';
 export default function LoginComponent() {
   const { register, handleSubmit, errors } = useForm();
   function onSubmit(data) {
-    fetch('/api/login', {
+    fetch('https://mobile.clazbooks.com/api/users/auth/sign_in', {
       body: JSON.stringify(data),
       method: 'POST',
     })
