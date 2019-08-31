@@ -16,6 +16,7 @@ export default (req, res) => {
         res.status(response.status).json(response.data);
       },
       err => {
+        console.warn(err);
         if (err.response) {
           res.statusCode = err.response.status;
           res.end(
