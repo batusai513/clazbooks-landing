@@ -1,23 +1,54 @@
 import React from 'react';
 import Link from 'next/link';
+import useForm from 'react-hook-form';
 
 export default function LoginComponent() {
+  const { register, handleSubmit, errors } = useForm();
+  function onSubmit(data) {
+    fetch('/api/login', {
+      body: JSON.stringify(data),
+      method: 'POST',
+    })
+      .then(res => {
+        console.warn(res);
+        return res.json();
+      })
+      .then(res => {
+        console.warn(res);
+      });
+    console.warn(data);
+  }
   return (
     <div className="onepage-template">
       <div className="auth-template">
         <div className="columns-wrap">
           <div className="col-form">
-            <form id="login-form" className="auth-form">
+            <form
+              id="login-form"
+              className="auth-form"
+              onSubmit={handleSubmit(onSubmit)}>
               <h2 className="form-title">Iniciar sesión</h2>
 
               <div className="form-group">
                 <label htmlFor="email">Escribe tu email</label>
-                <input type="email" id="email" required />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  ref={register}
+                  required
+                />
               </div>
 
               <div className="form-group">
                 <label htmlFor="password">Escribe tu clave</label>
-                <input type="password" id="password" required />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  ref={register}
+                  required
+                />
               </div>
 
               <div className="form-group submit-group">
