@@ -1,0 +1,126 @@
+// Features Section
+.features-section {
+  padding: 200px 0;
+
+  .container {
+    width: 100%;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feature-item {
+    max-width: 400px;
+    width: 100%;
+
+    .icon-wrap {
+      position: relative;
+      background: #FFFFFF;
+      border: 1px solid #DEE2E5;
+      border-radius: 24px;
+      width: 107px;
+      height: 122px;
+
+      img {
+        position: absolute;
+        z-index: 10;
+        right: -12px;
+        bottom: 0;
+      }
+    }
+
+    .feature-title {
+      padding-left: 32px;
+      margin-top: 40px;
+      margin-bottom: 24px;
+      display: block;
+      font-style: normal;
+      font-weight: 900;
+      letter-spacing: -0.2px;
+      color: #212127;
+    }
+
+    .description {
+      display: block;
+      padding-left: 32px;
+      font-family: $font;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 40px;
+      letter-spacing: -0.4px;
+      color: #212127;
+    }
+
+    &:nth-child(2) {
+      margin-top: 100px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 200px;
+    }
+
+  }
+
+  @media (max-width: 1400px) {
+    padding: 160px 0;
+    .container {
+      max-width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
+      justify-content: space-around;
+    }
+    .feature-item {
+      max-width: calc(100% / 3 - 50px);
+      width: 100%;
+      .feature-title {
+        margin-bottom: 15px;
+        font-size: 26px;
+        margin-top: 30px;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 1.8;
+      }
+
+      &:nth-child(2) {
+        margin-top: 80px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 160px;
+      }
+
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 75px 0;
+    .container {
+      flex-direction: column;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .feature-item {
+      margin-top: 0!important;
+      margin-bottom: 65px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      max-width: 600px;
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      .feature-title {
+        padding-left: 0;
+      }
+      .description{
+        padding-left: 0;
+      }
+    }
+  }
+
+}

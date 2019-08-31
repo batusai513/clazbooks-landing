@@ -1,0 +1,314 @@
+// Section About
+.section-about {
+  margin-top: 200px;
+  height: 800px;
+  position: relative;
+
+  .brain-part-animated {
+    position: absolute;
+    height: 800px;
+    width: 85%;
+    border-radius: 0px 40px 40px 0px;
+    z-index: 0;
+    background-color: #1E1F20;
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    padding-right: 80px;
+    justify-content: space-between;
+  }
+
+  .brain-part {
+    z-index: 15;
+    position: relative;
+    height: 800px;
+    width: 28%;
+    border-radius: 0px 40px 40px 0px;
+
+    .brain {
+      position: absolute;
+      left: 32%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .content-part {
+    width: 45%;
+    display: flex;
+    align-items: center;
+
+    .section-subtitle {
+      font-family: $font;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      letter-spacing: -0.4px;
+      color: #212127;
+      max-width: 700px;
+    }
+
+    .section-title {
+      font-family: $font;
+      font-style: normal;
+      font-weight: 900;
+      letter-spacing: -0.28px;
+      color: #212126;
+      display: block;
+      margin-bottom: 13px;
+      line-height: 1.6;
+    }
+
+    .counters {
+      margin-top: 70px;
+      max-width: 435px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .counter {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 70px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .counter-left {
+          height: 90px;
+          display: flex;
+          align-items: center;
+          margin-right: 24px;
+        }
+
+        .counter-part {
+          .number {
+            font-family: $font;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 56px;
+            line-height: 90px;
+            letter-spacing: -0.28px;
+            color: #212126;
+          }
+
+          .label {
+            text-align: center;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            letter-spacing: -0.4px;
+            color: #212127;
+          }
+        }
+      }
+
+      @media (max-width: 1440px) {
+        margin-top: 50px;
+        max-width: 360px;
+        .counter {
+          margin-bottom: 50px;
+
+          .counter-left {
+            height: 50px;
+          }
+
+          .counter-part {
+            .number {
+              line-height: 50px;
+              font-size: 40px;
+            }
+
+            .label {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  @media (max-width: 1400px) {
+    height: 700px;
+    .brain-part {
+      height: 700px;
+    }
+    .brain-part-animated {
+      height: 700px;
+    }
+  }
+  @media (max-width: 1366px) {
+    height: 600px;
+    .brain-part {
+      height: 600px;
+    }
+    .brain-part-animated {
+      height: 600px;
+    }
+    .content-part {
+      .section-subtitle {
+        font-size: 20px;
+      }
+
+      .counters {
+        margin-top: 40px;
+        max-width: 320px;
+
+        .counter {
+          margin-bottom: 35px;
+
+          .counter-left {
+            height: 40px;
+          }
+
+          .counter-part {
+            .number {
+              line-height: 40px;
+              font-size: 36px;
+            }
+
+            .label {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1199px) {
+    .content-part {
+      width: 50%;
+
+      .section-title {
+        br {
+          display: none;
+        }
+      }
+
+      .section-subtitle {
+        font-size: 18px;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    width: 100%;
+    max-width: 600px;
+    flex-direction: column-reverse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    height: auto;
+    .container {
+      width: 100%;
+      flex-direction: column-reverse;
+      padding: 0 25px;
+    }
+    .brain-part-animated {
+      display: none;
+    }
+    .brain-part {
+      margin-top: 100px;
+      @media (min-width: 768px) {
+        margin-top: 200px;
+      }
+      margin-left: -25px;
+      display: block;
+      width: 100vw;
+      max-width: 600px;
+      position: relative;
+      background: #1E1F20;
+      border-radius: 40px 40px 0px 0px;
+      height: 220px;
+      .brain {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 48px;
+        top: auto;
+        max-width: 80%;
+        width: 340px;
+        height: auto;
+        display: block;
+      }
+    }
+    .content-part {
+      height: auto;
+      width: 100%;
+      max-width: 100%;
+      .content {
+        .section-title {
+          br {
+            display: none;
+          }
+        }
+
+        .section-subtitle {
+          font-size: 18px;
+        }
+
+        .counters {
+          margin-left: auto;
+          margin-right: auto;
+          width: 240px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .counter {
+            margin-left: -49px;
+            margin-bottom: 60px;
+
+            .counter-left {
+              height: 115px;
+            }
+
+            .counter-part {
+              .number {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 100px;
+                line-height: 115px;
+                text-align: center;
+                letter-spacing: -0.5px;
+                color: #FF6B56;
+              }
+
+              .label {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 40px;
+                text-align: center;
+                letter-spacing: -0.4px;
+                color: #1E1F20;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 340px) {
+    .content-part {
+      .content {
+        .counters {
+          .counter {
+            margin-bottom: 40px;
+            .counter-part {
+              .number{
+                font-size: 70px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

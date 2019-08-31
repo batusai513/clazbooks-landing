@@ -1,0 +1,77 @@
+@mixin transition {
+  transition: 0.3s all ease;
+}
+
+// Buttons
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.233333px;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 40px;
+  background: #1E1F20;
+  border-radius: 20px;
+  @include transition;
+  outline: 0 !important;
+
+  &:hover, &:active, &:focus, &:visited {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: rgba(#1E1F20, 0.8);
+  }
+
+  @media (max-width: 991px) {
+    height: 32px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 14px;
+  }
+}
+
+
+@mixin btn-primary {
+  cursor: pointer;
+  @include transition;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 48px;
+  min-width: 170px;
+  background: #30A3FF;
+  border-radius: 24px;
+  font-family: $font;
+  font-style: normal;
+  font-size: 14px;
+  color: #fff!important;
+  letter-spacing: normal;
+  font-weight: 500;
+  &:hover, &:active, &:focus {
+    background-color: rgba(#30A3FF, .8);
+  }
+  @media (max-width: 991px) {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+  }
+}
+
+.btn-empty {
+  @include btn-primary;
+}
+
+.btn-primary {
+  @include btn-primary;
+}

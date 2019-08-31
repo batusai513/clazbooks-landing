@@ -1,0 +1,224 @@
+// Hero Section
+.hero-section {
+  margin-top: 20px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: calc(100vh - 120px);
+  max-height: 1280px;
+  min-height: 700px;
+  position: relative;
+
+  // Video Popup Button
+  .video-popup {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FF6B56;
+    box-shadow: 0px 2px 34px rgba(255, 107, 86, 0.300563);
+    position: absolute;
+    left: 50.25%;
+    bottom: 49%;
+    transform: translateX(-63%);
+    cursor: pointer;
+    z-index: 15;
+    @include transition;
+
+    &:hover {
+      background-color: rgba(#FF6B56, .8);
+    }
+  }
+
+  // Background
+  .background-part {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/img/header.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    z-index: 0;
+
+    .relative-wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  .container {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .col-grid {
+    height: 100%;
+    width: 50%;
+    position: relative;
+
+    .grid-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin-left: 50px;
+    }
+  }
+
+  .col-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-bottom: 200px;
+
+    .section-title {
+      display: block;
+      margin-bottom: 32px;
+    }
+
+    .section-subtitle {
+      font-family: $font;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      letter-spacing: -0.4px;
+      color: #222128;
+      display: block;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  @media (max-width: 1440px) {
+    max-width: 100vw;
+  }
+
+  @media (max-width: 1099px) {
+    .col-content {
+      width: 45%;
+      padding-bottom: 100px;
+      padding-left: 30px;
+
+      .section-subtitle {
+        br {
+          display: none;
+        }
+      }
+    }
+    .col-grid {
+      width: 55%;
+
+      .grid-wrapper {
+        margin-left: 30px;
+
+        .grid-styled {
+          max-width: 440px;
+        }
+      }
+    }
+  }
+
+
+  // Mobile Version
+  .mobile-video {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    height: auto;
+    min-height: unset;
+    max-height: unset;
+    .mobile-video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      background-image: url('/static/header-mobile.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      &:after {
+        padding-bottom: 70%;
+        display: block;
+        content: "";
+      }
+
+      .mobile-video-popup {
+        width: 72px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 50%;
+        background: #FF6B56;
+        box-shadow: 0px 2px 34px rgba(255, 107, 86, 0.300563);
+        cursor: pointer;
+        z-index: 15;
+        @include transition;
+      }
+
+    }
+    .col-grid, .video-popup, .background-part {
+      display: none;
+    }
+
+    .col-content {
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 65px;
+      padding-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .content {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+
+      .section-title {
+        br {
+          display: none;
+        }
+
+        margin-bottom: 20px;
+      }
+
+      .section-subtitle {
+        font-size: 18px;
+
+        br {
+          display: none;
+        }
+
+        display: block;
+        margin-bottom: 30px;
+      }
+
+      .cta-button {
+        @include btn-primary;
+      }
+    }
+
+  }
+
+}

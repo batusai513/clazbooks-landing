@@ -1,0 +1,58 @@
+// Section Bestsellers
+.section-bestsellers {
+  margin-top: 120px;
+  position: relative;
+  z-index: 10;
+  padding: 0 30px;
+
+  .books-grid {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 72px;
+
+    .book-item {
+      background-color: #fff;
+      position: relative;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 30px;
+      overflow: hidden;
+
+      &:after {
+        display: block;
+        content: "";
+        padding-bottom: 160%;
+      }
+    }
+  }
+
+  .btn-flex {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 1366px) {
+    .books-grid {
+      max-width: 900px;
+      grid-gap: 65px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .books-grid {
+      max-width: 720px;
+      grid-gap: 40px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+
+}

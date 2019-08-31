@@ -1,0 +1,61 @@
+body {
+  line-height: 1.8;
+  font-family: $font;
+}
+
+p {
+  line-height: 1.8;
+  font-family: $font;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font;
+  line-height: 1.25;
+  font-weight: 900;
+  color: $color-dark;
+}
+
+
+h1 {
+  font-size: 80px;
+  @media (max-width: 1400px) {
+    font-size: 66px;
+  }
+  @media (max-width: 1199px) {
+    font-size: 54px;
+  }
+  @media (max-width: 991px) {
+    font-size: 46px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media (max-width: 345px) {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  font-size: 56px;
+  @media (max-width: 1600px) {
+    font-size: 46px;
+  }
+  @media (max-width: 1199px) {
+    font-size: 40px;
+  }
+  @media (max-width: 991px) {
+    font-size: 38px;
+  }
+  @media (max-width: 340px) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  letter-spacing: -0.2px;
+  @media (max-width: 991px) {
+    font-size: 28px;
+  }
+}
