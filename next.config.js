@@ -1,7 +1,10 @@
-require('dotenv').config();
 const withSass = require('@zeit/next-sass');
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
+
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config();
+}
 
 module.exports = withPlugins([
   [

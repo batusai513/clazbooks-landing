@@ -1,5 +1,10 @@
 {
   "env": {
-    "API_SERVER": "@api_server"
+    "API_SERVER": "/api/"
+  },
+  "build": {
+    "env": {
+      "API_SERVER": "@api_server"
+    }
   }
 }
