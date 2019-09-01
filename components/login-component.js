@@ -1,16 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import useForm from 'react-hook-form';
-import axios from 'axios';
+import http from '../utils/http';
 
 export default function LoginComponent() {
   const { register, handleSubmit, errors } = useForm();
   function onSubmit(data) {
-    axios
-      .post('https://mobile.clazbooks.com/api/users/auth/sign_in', data)
-      .then(res => {
-        console.warn(res);
-      });
+    http.post('/users/auth/sign_in', data).then(res => {
+      console.warn(res);
+    });
   }
   return (
     <div className="onepage-template">
