@@ -24,16 +24,12 @@ function Nav() {
         </div>
         <div className="part">
           <div className="btns-wrap">
-            <Link href="/login">
-              <a className="link">
-                Iniciar
-              </a>
-            </Link>
-            <Link href="/register">
-              <a className="btn">
-                Registrar
-              </a>
-            </Link>
+            <a href="https://clazbooks.now.sh/login" className="link">
+              Iniciar
+            </a>
+            <a href="https://clazbooks.now.sh/register" className="btn">
+              Registrar
+            </a>
           </div>
         </div>
       </div>

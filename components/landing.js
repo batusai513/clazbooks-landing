@@ -27,9 +27,11 @@ export default function Landing() {
                 <br /> <strong>Amazon</strong> y el{' '}
                 <strong>New York Times</strong>
               </p>
-              <Link href="/register">
-                <a className="cta-button btn-empty">Gratis</a>
-              </Link>
+              <a
+                href="https://clazbooks.now.sh/register"
+                className="cta-button btn-empty">
+                Gratis
+              </a>
             </div>
           </div>
           <div className="col-grid">

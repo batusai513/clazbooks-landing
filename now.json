@@ -2,6 +2,7 @@
   "env": {
     "API_SERVER": "/api/"
   },
+  "alias": "clazbooks.now.sh",
   "build": {
     "env": {
       "API_SERVER": "@api_server"
