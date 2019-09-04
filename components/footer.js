@@ -3,7 +3,7 @@ import React from 'react';
 export default function Footer() {
   return (
     <footer className="footer">
-      <a href="#" className="instagram-btn">
+      <a href="https://www.instagram.com/clazbooks/" className="instagram-btn">
         <span className="wrapper"></span>
         <span className="icon">
           <span className="icon-wrap">
@@ -53,7 +53,7 @@ export default function Footer() {
 
       <div className="footer-copyright">(c) 2019 Clazbooks</div>
 
-      <a href="#" className="footer-logo">
+      <a href="/" className="footer-logo">
         <img src="static/img/logo.svg" alt="" />
       </a>
     </footer>

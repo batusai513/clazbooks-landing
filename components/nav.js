@@ -14,10 +14,10 @@ function Nav() {
         </div>
         <div className="part">
           <div className="socials">
-            <a href="#" className="social-apple">
+            <a href="https://apps.apple.com/us/app/clazbooks-libros/id1224261279" className="social-apple">
               <img src="static/img/socials/apple.svg" alt="App Store" />
             </a>
-            <a href="#" className="social-google">
+            <a href="https://play.google.com/store/apps/details?id=com.clazbooks.clazbooks&hl=en" className="social-google">
               <img src="static/img/socials/google.svg" alt="Play Market" />
             </a>
           </div>
