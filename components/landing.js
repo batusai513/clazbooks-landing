@@ -6,14 +6,14 @@ export default function Landing() {
     <React.Fragment>
       <section className="hero-section">
         <div className="mobile-video">
-          <a href="/" className="video-popup-btn  mobile-video-popup">
+          <a href="https://vimeo.com/341077138" className="video-popup-btn  mobile-video-popup js-video-popup">
             <img src="static/img/play.svg" alt="" />
           </a>
         </div>
 
         <div className="background-part"></div>
 
-        <a href="#" className="video-popup-btn video-popup">
+        <a href="https://vimeo.com/341077138" className="video-popup-btn video-popup js-video-popup">
           <img src="static/img/play.svg" alt="" />
         </a>
         <div className="container">
@@ -28,7 +28,7 @@ export default function Landing() {
                 <strong>New York Times</strong>
               </p>
               <a
-                href="https://clazbooks.now.sh/register"
+                href="https://clazbooks.com/register"
                 className="cta-button btn-empty">
                 Gratis
               </a>
@@ -283,7 +283,7 @@ export default function Landing() {
               style={{ backgroundImage: 'url(static/img/book/4.png)' }}></div>
           </div>
           <div className="btn-flex">
-            <a href="#" className="btn-empty">
+            <a href="https://clazbooks.com/register" className="btn-empty">
               Gratis
             </a>
           </div>
@@ -351,14 +351,14 @@ export default function Landing() {
               political pundits, and trailblazing scientists.
             </p>
             <div className="btn-wrapper">
-              <a href="#" className="btn-primary">
+              <a href="https://clazbooks.com/register" className="btn-primary">
                 Gratis
               </a>
             </div>
             <hr />
             <div className="socials-btn">
               <div className="btn-wrap">
-                <a href="#">
+                <a href="https://apps.apple.com/us/app/clazbooks-libros/id1224261279">
                   <span className="icon">
                     <img src="static/img/socials/apple.svg" alt="" />
                   </span>
@@ -381,7 +381,7 @@ export default function Landing() {
                 </a>
               </div>
               <div className="btn-wrap">
-                <a href="#">
+                <a href="https://play.google.com/store/apps/details?id=com.clazbooks.clazbooks&hl=en">
                   <span className="icon">
                     <img src="static/img/socials/google.svg" alt="" />
                   </span>

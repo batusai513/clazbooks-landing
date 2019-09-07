@@ -3,6 +3,8 @@ function executeMain() {
 
   const browserW = document.documentElement.clientWidth;
 
+
+
   // Features Section Animations
   {
     if ($('.feature-item').length) {
@@ -529,3 +531,14 @@ function executeMain() {
     }
   }
 }
+
+$(document).ready(function() {
+	$('.js-video-popup').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
+});

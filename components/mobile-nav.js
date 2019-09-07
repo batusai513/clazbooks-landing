@@ -9,10 +9,10 @@ export default function MobileNav() {
           <img src="static/img/logo.svg" alt="Logo" />
         </a>
         <div className="btns-wrap">
-          <a href="https://clazbooks.now.sh/login" className="link">
+          <a href="https://clazbooks.com/login" className="link">
             Iniciar
           </a>
-          <a href="https://clazbooks.now.sh/register" className="btn">
+          <a href="https://clazbooks.com/register" className="btn">
             Registrar
           </a>
         </div>

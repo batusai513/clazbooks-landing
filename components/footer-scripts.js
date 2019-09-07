@@ -4,6 +4,7 @@ export default function FooterScripts() {
   return (
     <React.Fragment>
       <script src="static/vendors/jquery/jquery.js"></script>
+      <script src="static/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
 
       <script src="static/vendors/gsap/TweenMax.min.js"></script>
 

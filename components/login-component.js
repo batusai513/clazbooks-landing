@@ -117,7 +117,7 @@ export default function LoginComponent() {
 
               <div className="cta">
                 Soy Nuevo?{' '}
-                <a href="https://clazbooks.now.sh/register">Crear una cuenta</a>
+                <a href="https://clazbooks.com/register">Crear una cuenta</a>
               </div>
             </form>
           </div>
