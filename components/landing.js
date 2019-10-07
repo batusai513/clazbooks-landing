@@ -226,19 +226,19 @@ export default function Landing() {
             <div className="partner-label">De los más vendidos</div>
             <div className="partners-list">
               <a href="#">
-                <img src="static/img/partners/1.png" alt="" />
+                <img src="static/img/partners/amazon.svg" alt="" />
               </a>
               <a href="#">
-                <img src="static/img/partners/2.png" alt="" />
+                <img src="static/img/partners/usa-today.svg" alt="" />
               </a>
               <a href="#">
-                <img src="static/img/partners/3.png" alt="" />
+                <img src="static/img/partners/wsj.svg" alt="" />
               </a>
               <a href="#">
-                <img src="static/img/partners/4.png" alt="" />
+                <img src="static/img/partners/the-new-york-times.svg" alt="" />
               </a>
               <a href="#">
-                <img src="static/img/partners/5.png" alt="" />
+                <img src="static/img/partners/hbr.svg" alt="" />
               </a>
             </div>
           </div>
