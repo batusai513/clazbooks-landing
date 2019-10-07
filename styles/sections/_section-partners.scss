@@ -65,6 +65,22 @@
     }
   }
 
+  .part-partners {
+    .partners-list {
+      width: 350px;
+
+      a {
+        max-width: 250px;
+
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
   @media (max-width: 1600px) {
     height: 660px;
     .part-partners {
@@ -87,21 +103,6 @@
 
     .part-author {
       width: 20%;
-    }
-    .part-partners {
-      .partners-list {
-        width: 350px;
-
-        a {
-          max-width: 250px;
-
-          img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-          }
-        }
-      }
     }
   }
 
