@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import AppleIcon from './apple-icon';
+import PlayStore from './play-store-icon';
 
 function Nav() {
   return (
@@ -15,10 +17,10 @@ function Nav() {
         <div className="part">
           <div className="socials">
             <a href="https://apps.apple.com/us/app/clazbooks-libros/id1224261279" className="social-apple">
-              <img src="static/img/socials/apple.svg" alt="App Store" />
+              <AppleIcon />
             </a>
             <a href="https://play.google.com/store/apps/details?id=com.clazbooks.clazbooks&hl=en" className="social-google">
-              <img src="static/img/socials/google.svg" alt="Play Market" />
+              <PlayStore />
             </a>
           </div>
         </div>

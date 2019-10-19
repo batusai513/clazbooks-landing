@@ -22,7 +22,7 @@ export default function Landing() {
                 Más Que <br /> <span className="grey">Resúmenes</span>
               </h1>
               <p className="section-subtitle">
-                Escucha lo mejor de los mejores <strong>Best Sellers de</strong>{' '}
+                Escucha los mejores libros y <strong>Best Sellers de</strong>{' '}
                 <br /> <strong>Amazon</strong> y el{' '}
                 <strong>New York Times</strong>
               </p>
@@ -192,7 +192,7 @@ export default function Landing() {
               En <span className="grey">15 minutos</span>
             </h2>
             <div className="description">
-              Aprende de mejores libros de negocios, relaciones, autoayuda y
+              Aprende de los mejores libros de negocios, relaciones, autoayuda y
               más.
             </div>
           </div>
@@ -204,8 +204,7 @@ export default function Landing() {
               En audio y <span className="grey">lectura</span>
             </h2>
             <div className="description">
-              Aprende de mejores libros de negocios, relaciones, autoayuda y
-              más.
+              Disfruta de nuestro contenido en audio y lectura sin consumo de datos.
             </div>
           </div>
         </div>

@@ -534,7 +534,7 @@ function executeMain() {
 
 $(document).ready(function() {
 	$('.js-video-popup').magnificPopup({
-		disableOn: 700,
+		// disableOn: 700,
 		type: 'iframe',
 		mainClass: 'mfp-fade',
 		removalDelay: 160,
