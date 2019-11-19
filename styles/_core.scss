@@ -78,7 +78,7 @@ body {
 
 // Section Contact
 .section-contact {
-  margin-top: 200px;
+  margin-top: 100px;
   height: 840px;
   display: flex;
   justify-content: space-between;
@@ -177,7 +177,6 @@ body {
 
   @media (max-width: 1440px) {
     height: 660px;
-    margin-top: 100px;
   }
   @media (max-width: 1366px) {
     .content-part {

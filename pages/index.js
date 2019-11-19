@@ -6,6 +6,7 @@ import HeadContent from '../components/head';
 import Footer from '../components/footer';
 import FooterScripts from '../components/footer-scripts';
 import Landing from '../components/landing';
+import http from '../utils/http';
 import '../styles/main.scss';
 
 function Home() {
@@ -27,5 +28,16 @@ function Home() {
     </div>
   );
 }
+
+// Home.getInitialProps = function getInitialProps() {
+//   return http.get('/landing_pages').then(res => {
+//     return {
+//       images: res
+//     };
+//   }, err => {
+//     console.warn(err);
+//     throw err;
+//   });
+// }
 
 export default Home;

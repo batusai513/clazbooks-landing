@@ -1,4 +1,6 @@
 import React from 'react';
+import PlayStoreIcon from './play-store-icon';
+import AppleIcon from './apple-icon';
 
 export default function Landing() {
   return (
@@ -344,12 +346,12 @@ export default function Landing() {
             <h3 className="section-title">
               ¡Empieza <span className="grey">ya mismo!</span>
             </h3>
-            <p className="section-subtitle">
+            {/*<p className="section-subtitle">
               Get the best ideas from leading business mavericks, health gurus,
               political pundits, and trailblazing scientists.
-            </p>
+                    </p>*/}
             <div className="btn-wrapper">
-              <a href="https://clazbooks.com/register" className="btn-primary">
+              <a href="https://clazbooks.com/register" className="btn-primary btn-large">
                 Gratis
               </a>
             </div>
@@ -358,7 +360,7 @@ export default function Landing() {
               <div className="btn-wrap">
                 <a href="https://apps.apple.com/us/app/clazbooks-libros/id1224261279">
                   <span className="icon">
-                    <img src="static/img/socials/apple.svg" alt="" />
+                    <AppleIcon />
                   </span>
                   <span className="label">App Store</span>
                   <span className="arrow">
@@ -381,7 +383,7 @@ export default function Landing() {
               <div className="btn-wrap">
                 <a href="https://play.google.com/store/apps/details?id=com.clazbooks.clazbooks&hl=en">
                   <span className="icon">
-                    <img src="static/img/socials/google.svg" alt="" />
+                    <PlayStoreIcon />
                   </span>
                   <span className="label">Google Play</span>
                   <span className="arrow">

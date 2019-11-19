@@ -85,12 +85,12 @@ function executeMain() {
 
       const round = $('.round');
 
-      $('.sections-wrap').css({
-        'max-height': `${$('.sections-wrap').outerHeight()}px`,
-      });
-      $('html,body').css({
-        'max-height': `${$('html,body').outerHeight()}px`,
-      });
+      // $('.sections-wrap').css({
+      //   'max-height': `${$('.sections-wrap').outerHeight()}px`,
+      // });
+      // $('html,body').css({
+      //   'max-height': `${$('html,body').outerHeight()}px`,
+      // });
 
       if (browserW >= 1600) {
         roundSize = 1400;
