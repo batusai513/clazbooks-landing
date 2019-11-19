@@ -2,7 +2,9 @@ import React from 'react';
 import PlayStoreIcon from './play-store-icon';
 import AppleIcon from './apple-icon';
 
-export default function Landing() {
+export default function Landing({ images }) {
+  const mainImages = images['main-images'];
+  const secondaryImages = images['secondary-images'];
   return (
     <React.Fragment>
       <section className="hero-section">
@@ -40,132 +42,32 @@ export default function Landing() {
               <div className="grid-scroll">
                 <div className="grid-styled grid">
                   <div className="col-left">
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/1.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/3.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/5.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/7.png)',
-                      }}></div>
-
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/1.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/3.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/5.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/7.png)',
-                      }}></div>
-
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/1.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/3.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/5.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/7.png)',
-                      }}></div>
+                    {
+                      mainImages.slice(0, Math.ceil(mainImages.length / 2)).map(image => {
+                        return (
+                          <div
+                            key={image}
+                            className="book-item"
+                            style={{
+                              backgroundImage: `url(${image})`,
+                            }}></div>
+                        )
+                      })
+                    }
                   </div>
                   <div className="col-right">
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/2.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/4.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/6.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/8.png)',
-                      }}></div>
-
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/2.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/4.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/6.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/8.png)',
-                      }}></div>
-
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/2.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/4.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/6.png)',
-                      }}></div>
-                    <div
-                      className="book-item"
-                      style={{
-                        backgroundImage: 'url(static/img/book/8.png)',
-                      }}></div>
+                  {
+                    mainImages.slice(Math.ceil(mainImages.length / 2) + 1).map(image => {
+                      return (
+                        <div
+                          key={image}
+                          className="book-item"
+                          style={{
+                            backgroundImage: `url(${image})`,
+                          }}></div>
+                      )
+                    })
+                  }
                   </div>
                 </div>
               </div>
@@ -254,33 +156,16 @@ export default function Landing() {
 
         <section className="section-bestsellers">
           <div className="books-grid">
-            <div
-              className="book-item"
-              style={{ backgroundImage: 'url(static/img/book/4.png)' }}></div>
-            <div
-              className="book-item"
-              style={{ backgroundImage: 'url(static/img/book/8.png)' }}></div>
-            <div
-              className="book-item"
-              style={{ backgroundImage: 'url(static/img/book/4.png)' }}></div>
-            <div
-              className="book-item"
-              style={{ backgroundImage: 'url(static/img/book/4.png)' }}></div>
-            <div
-              className="book-item"
-              style={{ backgroundImage: 'url(static/img/book/8.png)' }}></div>
-            <div
-              className="book-item"
-              style={{ backgroundImage: 'url(static/img/book/4.png)' }}></div>
-            <div
-              className="book-item"
-              style={{ backgroundImage: 'url(static/img/book/4.png)' }}></div>
-            <div
-              className="book-item"
-              style={{ backgroundImage: 'url(static/img/book/8.png)' }}></div>
-            <div
-              className="book-item"
-              style={{ backgroundImage: 'url(static/img/book/4.png)' }}></div>
+            {
+              secondaryImages.map(image => {
+                return (
+                  <div
+                    key={image}
+                    className="book-item"
+                    style={{ backgroundImage: `url(${image})` }}></div>
+                );
+              })
+            }
           </div>
           <div className="btn-flex">
             <a href="https://clazbooks.com/register" className="btn-empty">
