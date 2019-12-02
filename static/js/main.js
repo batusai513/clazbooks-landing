@@ -482,54 +482,6 @@ function executeMain() {
       $('.mobile-video').remove();
     }
   }
-
-  // Grid Animation
-  {
-    if (document.documentElement.clientWidth > 991 && $('.grid').length) {
-      $('.grid-scroll').css({
-        height: `${$('.grid-scroll').offset().top}px`,
-      });
-
-      let offset = $('.grid-wrapper').offset().top + 60;
-      $('.grid-scroll').css({
-        'padding-top': `${offset}px`,
-      });
-
-      let gridOffset = $('.grid').outerHeight() + $('.grid').offset().top;
-      let colGridH = $('.col-grid').outerHeight();
-      let gridSpeed = $('.book-item').length * 3.5;
-
-      function scroll() {
-        TweenMax.to($('.grid'), gridSpeed, {
-          y: `-${gridOffset}px`,
-          ease: Linear.easeNone,
-          onComplete: setStart,
-        });
-      }
-
-      function setStart() {
-        $('.book-item').removeClass('faded');
-
-        TweenMax.set($('.grid'), {
-          y: `${colGridH}px`,
-          onComplete: scroll,
-        });
-      }
-
-      scroll();
-
-      function step() {
-        requestAnimationFrame(step);
-        $('.book-item').each(function() {
-          if ($(this).offset().top < -($(this).outerHeight() / 3.5)) {
-            $(this).addClass('faded');
-          }
-        });
-      }
-
-      requestAnimationFrame(step);
-    }
-  }
 }
 
 $(document).ready(function() {

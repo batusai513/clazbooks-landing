@@ -1,9 +1,10 @@
 import React from 'react';
+import VerticalScroll from './vertical-scroll';
 import PlayStoreIcon from './play-store-icon';
 import AppleIcon from './apple-icon';
 
 export default function Landing({ images }) {
-  const mainImages = images['main-images'];
+  let mainImages = images['main-images'];
   const secondaryImages = images['secondary-images'];
   return (
     <React.Fragment>
@@ -38,40 +39,7 @@ export default function Landing({ images }) {
             </div>
           </div>
           <div className="col-grid">
-            <div className="grid-wrapper">
-              <div className="grid-scroll">
-                <div className="grid-styled grid">
-                  <div className="col-left">
-                    {
-                      mainImages.slice(0, Math.ceil(mainImages.length / 2)).map(image => {
-                        return (
-                          <div
-                            key={image}
-                            className="book-item"
-                            style={{
-                              backgroundImage: `url(${image})`,
-                            }}></div>
-                        )
-                      })
-                    }
-                  </div>
-                  <div className="col-right">
-                  {
-                    mainImages.slice(Math.ceil(mainImages.length / 2) + 1).map(image => {
-                      return (
-                        <div
-                          key={image}
-                          className="book-item"
-                          style={{
-                            backgroundImage: `url(${image})`,
-                          }}></div>
-                      )
-                    })
-                  }
-                  </div>
-                </div>
-              </div>
-            </div>
+            <VerticalScroll images={mainImages} />
           </div>
         </div>
       </section>
