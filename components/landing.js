@@ -32,7 +32,7 @@ export default function Landing({ images }) {
                 <strong>New York Times</strong>
               </p>
               <a
-                href="https://clazbooks.com/register"
+                href="https://app.clazbooks.com/register"
                 className="cta-button btn-empty">
                 Gratis
               </a>
@@ -136,7 +136,7 @@ export default function Landing({ images }) {
             }
           </div>
           <div className="btn-flex">
-            <a href="https://clazbooks.com/register" className="btn-empty">
+            <a href="https://app.clazbooks.com/register" className="btn-empty">
               Gratis
             </a>
           </div>
@@ -204,7 +204,7 @@ export default function Landing({ images }) {
               political pundits, and trailblazing scientists.
                     </p>*/}
             <div className="btn-wrapper">
-              <a href="https://clazbooks.com/register" className="btn-primary btn-large">
+              <a href="https://app.clazbooks.com/register" className="btn-primary btn-large">
                 Gratis
               </a>
             </div>
