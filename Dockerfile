@@ -8,7 +8,7 @@ RUN yarn
 
 COPY . .
 
-ENV API_SERVER https://mobile.clazbooks.com
+ENV API_SERVER https://mobile.clazbooks.com/api
 
 RUN yarn build
 
